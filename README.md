@@ -1,4 +1,4 @@
-# Mastering Expression Adaptation to Different Audiences: Learning Multi-Agent Communication via Contrastive Message Graph
+<!-- # Mastering Expression Adaptation to Different Audiences: Learning Multi-Agent Communication via Contrastive Message Graph
 
 Official repository of C2LMG: Mastering Expression Adaptation to Different Audiences: Learning Multi-Agent Communication via Contrastive Message Graph, based on the open-sourced codebases [PyMARL2](https://github.com/hijkzzz/pymarl2), built on the [PyMARL](https://github.com/oxwhirl/pymarl).
 
@@ -36,4 +36,6 @@ python3 src/main.py --alg-config=c2lmg --env-config=mpe/somple_spread_0vis --cud
 To run a Predator-Prey experiment:
 ```
 python3 src/main.py --alg-config=c2lmg --env-config=mpe/simple_tag_0vis_colli --cuda_id=0 --manual_seed=1
-```
+``` -->
+
+Comming soon...
