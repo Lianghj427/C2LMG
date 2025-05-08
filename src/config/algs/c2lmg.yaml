@@ -1,0 +1,49 @@
+# --- C2LMG specific parameters ---
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 100000
+
+runner: "parallel"
+batch_size_run: 8
+buffer_size: 5000 
+batch_size: 32
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+# parameters for mac
+mac: "n_mac"
+
+# parameters for agent
+agent: "c2lmg_agent" # self-attention for communication
+rnn_hidden_dim: 128
+att_head_nums: 2
+use_gat_encoder: False
+comm_rounds: 2
+share_weight_gat: False
+directed: False
+hard_att: False
+
+# parameters for learner
+learner: "c2lmg_learner"
+agent_output_type: q
+mixer: "qmix"
+mixing_embed_dim: 32
+hypernet_embed: 64
+lr: 0.001 # Learning rate for agents
+td_lambda: 0.3
+optimizer: 'adam'
+grad_norm_clip: 20.0
+
+# parameters for contrastive learning
+temperature: 0.1
+base_temperature: 0.1
+contrastive_weight: 0.007
+contrastive_batch_size: 3
+norm_type: -1  # 0 for batch normlization, -1 for layer normlization
+cla: True
+
+name: "c2lmg"
